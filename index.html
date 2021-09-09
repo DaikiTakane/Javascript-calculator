@@ -1,0 +1,45 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+        <link rel="stylesheet" href="main.css">
+        <title>calculator</title>
+      </head>
+ 
+      <body>
+        <!-- ここに記述していきましょう！ -->
+        <table>
+           <input type=text id=input1 readonly><p>
+          <tr><td>
+           <input type=button value="7" onclick=kazu("7")>
+           <input type=button value="8" onclick=kazu("8")>
+           <input type=button value="9" onclick=kazu("9")>
+           <input type=button value="+" onclick=kigou("+")>
+          </td></tr>
+          <tr><td>
+           <input type=button value="4" onclick=kazu("4")>
+           <input type=button value="5" onclick=kazu("5")>
+           <input type=button value="6" onclick=kazu("6")>
+           <input type=button value="-" onclick=kigou("-")>
+          </td></tr>
+          <tr><td>
+           <input type=button value="1" onclick=kazu("1")>
+           <input type=button value="2" onclick=kazu("2")>
+           <input type=button value="3" onclick=kazu("3")>
+           <input type=button value="×" onclick=kigou("×")>
+          </td></tr>
+          <tr><td>
+           <input type=button value="0" onclick=kazu("0")>
+           <input type=button value="00" onclick=kazu("00")>
+           <input type=button value="." onclick=kazu(".")>
+           <input type=button value="÷" onclick=kigou("÷")>
+          </td></tr>
+          <tr><td>
+           <input type=button value="AC" onclick=ac() class="wide-button ac">
+           <input type=button value="=" onclick=equal() class="wide-button equal"> 
+          </td></tr>
+        </table>
+        <script src="main.js"></script>
+      </body>
+    </html>
